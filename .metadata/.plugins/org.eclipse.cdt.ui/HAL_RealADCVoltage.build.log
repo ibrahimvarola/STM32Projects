@@ -1,0 +1,20 @@
+23:27:38 **** Incremental Build of configuration Debug for project HAL_RealADCVoltage ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "HAL_RealADCVoltage.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\STM32Projects\HAL_RealADCVoltage\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_RealADCVoltage.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HAL_RealADCVoltage.elf
+ 
+arm-none-eabi-size   HAL_RealADCVoltage.elf 
+arm-none-eabi-objdump -h -S  HAL_RealADCVoltage.elf  > "HAL_RealADCVoltage.list"
+arm-none-eabi-objcopy  -O binary  HAL_RealADCVoltage.elf  "HAL_RealADCVoltage.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8116	     20	   1660	   9796	   2644	HAL_RealADCVoltage.elf
+Finished building: default.size.stdout
+ 
+Finished building: HAL_RealADCVoltage.bin
+ 
+Finished building: HAL_RealADCVoltage.list
+ 
+
+23:27:39 Build Finished. 0 errors, 0 warnings. (took 1s.316ms)
+
