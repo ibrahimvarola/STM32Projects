@@ -1,7 +1,12 @@
+c_braces=192,192,192
 c_comment_task_tag=255,255,0
+c_default=192,192,192
 c_multi_line_comment=128,255,255
 c_single_line_comment=128,255,255
 eclipse.preferences.version=1
+markOccurrences=false
+pp_default=0,64,0
+sourceHoverBackgroundColor=128,128,255
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
